@@ -162,9 +162,15 @@
     <Compile Include="Controllers\ClientInfoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderInfoesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604011035484_InitialCreate.cs" />
+    <Compile Include="Migrations\201604011035484_InitialCreate.Designer.cs">
+      <DependentUpon>201604011035484_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClientInfoContext.cs" />
     <Compile Include="Models\ClientModel.cs" />
@@ -234,6 +240,11 @@
     <Content Include="Views\ClientInfoes\Details.cshtml" />
     <Content Include="Views\ClientInfoes\Edit.cshtml" />
     <Content Include="Views\ClientInfoes\Index.cshtml" />
+    <Content Include="Views\OrderInfoes\Create.cshtml" />
+    <Content Include="Views\OrderInfoes\Delete.cshtml" />
+    <Content Include="Views\OrderInfoes\Details.cshtml" />
+    <Content Include="Views\OrderInfoes\Edit.cshtml" />
+    <Content Include="Views\OrderInfoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,6 +255,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604011035484_InitialCreate.resx">
+      <DependentUpon>201604011035484_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

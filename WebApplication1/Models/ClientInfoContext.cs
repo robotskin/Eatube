@@ -20,6 +20,8 @@ namespace WebApplication1.Models
         }
 
         public System.Data.Entity.DbSet<WebApplication1.Models.ClientInfo> ClientInfoes { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.OrderInfo> OrderInfoes { get; set; }
     
     }
 }
